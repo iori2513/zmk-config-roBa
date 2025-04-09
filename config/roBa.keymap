@@ -40,6 +40,11 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <8 9>;
+        };
     };
 
     macros {
@@ -78,10 +83,10 @@
 
         FUNCTION {
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                        &kp F6  &kp F7        &kp LC(UP_ARROW)  &kp MINUS      &kp BACKSPACE
-&kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans      &kp F13  &kp F6  &kp LC(LEFT)  &kp LC(DOWN)      &kp LC(RIGHT)  &kp F10
-&kp F11  &kp F12  &trans  &trans  &trans   &trans      &trans   &trans  &trans        &trans            &trans         &kp F11
-&trans   &trans   &trans  &trans  &trans   &trans      &trans   &trans                                                 &kp F12
+&kp F1   &kp F2          &msc SCRL_UP    &kp F4           &kp F5                        &kp F6  &kp F7        &kp LC(UP_ARROW)  &kp MINUS      &kp BACKSPACE
+&kp F6   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp F10  &trans      &kp F13  &kp F6  &kp LC(LEFT)  &kp LC(DOWN)      &kp LC(RIGHT)  &kp F10
+&kp F11  &kp F12         &trans          &trans           &trans   &trans      &trans   &trans  &trans        &trans            &trans         &kp F11
+&trans   &trans          &trans          &trans           &trans   &trans      &trans   &trans                                                 &kp F12
             >;
         };
 
